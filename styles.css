@@ -1,0 +1,28 @@
+header {
+    background-image: url (Illustrations/Bathome1.png);
+}
+
+h2 {font-size: 36px;
+    font-family: 'Rajdhani';
+    font-style: medium;
+    font-display: ;
+}
+intro {font-size: 12px;
+    font-family: 'Space Grotesk';
+}
+
+.contact {background-image: linear-gradient(to bottom right, #EDDEBF, #19587D  );
+}
+
+.button {background-image: linear-gradient(to bottom right, #EDDEBF, #B11313  );
+    width: auto;
+    height: 60px;
+}
+
+.pictures {display: inline-block;
+
+}
+
+img src="Illustrations/Bathome11.png" {border
+
+}
