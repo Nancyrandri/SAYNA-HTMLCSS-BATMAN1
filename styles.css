@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
 
 /*Header*/
 
@@ -31,14 +27,19 @@ header {
 }
 
 /*font du menu home*/
-.home {
+nav ul li a {
     font-family: 'Rajdhani';
-    font-size: 22px;
-    font-weight: medium;
+    font-size: 25px;
+    font-weight: 500;
     color: white;
 }
 
-/*Logos image droit de la page*/
+nav ul li a:hover {
+    color: #FFFF00;
+}
+
+
+/*Logos droit de la page*/
 #logos_right {
     display: inline-flex;
     flex-direction: column; 
@@ -74,7 +75,7 @@ header {
     color: white;
 }
 
-/*Premier titre de la page qui doit être le h1 de plus petite taille que les autres titres*/
+/*Premier titre de la page qui doit être le h1 mais de plus petite taille que les autres titres*/
 h2 {font-size: 30px;
     font-family: 'Space Grotesk';
     font-weight: bold;
@@ -83,15 +84,18 @@ h2 {font-size: 30px;
 }
 
 
-#fleche_baniere {
-    display: flex;
-    align-items:center;
-    justify-content:center;
-}
-
 /*Main*/
 
 /*Toute la page sans le footer*/
+
+/*premier element du main*/
+#fleche {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 50px;
+}
+
 main {background-color: black;
     outline-style: solid;
     outline-color: #bcbbbd77;
@@ -107,14 +111,12 @@ section {
 
 /*Texte h1 et texte descriptif en trois paragraphes*/
 .text {
-    /*margin-top: 30px;
-     margin-right: 30px;
-     margin-bottom: 30px;
-     margin-left: 173px;*/
     text-align: justify; 
     text-justify: inter-word;
-    padding-left: 172px;
-    padding-right: 260px;
+    padding-top: 35px;
+    padding-bottom: 90px;
+    padding-left: 165px;
+    padding-right: 300px; 
  }
 
  /*Les titres avant chaque description*/
@@ -148,9 +150,10 @@ p {
     width: 100%;
     justify-content: space-evenly;
     justify-content: center;
-    transition-duration: 0.7s;       
+    gap: 95px;
+    transition-duration: 0.7s;
+    padding-bottom: 30px;       
 }
-
 .pictures :hover {
     transform: scale(1.02);
     transition-duration: 0.7s;
@@ -167,7 +170,8 @@ figcaption {
 
 /*h1 némésis et images batman en acier*/
 .h1_pictures {
-    margin-top: 150px;
+    padding-top: 70px;
+  
 }
 
 /*image du némésis*/
@@ -175,7 +179,7 @@ figcaption {
     position: relative;
     display:flex;
     width: 12%;
-    margin: -150px 300px 0px 80px;   
+    margin: -95px 300px 0px 80px;   
 }
 
 /*Image batman mise en place au droit de la page*/
@@ -184,7 +188,7 @@ figcaption {
     width: 100%;
     justify-content: right;
     margin-top: -110px;
-    margin-bottom: -100px;
+    margin-bottom: -80px;
 }
 
 #batrt {
@@ -193,7 +197,7 @@ figcaption {
 
  /*texte h1 et p du justice league*/
  .h3_text {
-    padding: 220px;
+    padding: 150px 220px 150px 250px;
 }
 
 /*Tous ce qui se trouvent dans le multimédia*/
@@ -357,6 +361,7 @@ footer {
     justify-content: space-between;
     justify-content: center;
     padding-top: 450px;
+    gap: 10px;
 }
 
 /*texte du logos sb seulement*/
@@ -366,13 +371,36 @@ footer {
     text-align: center;
 }
 
-
+/*Tous les logos du footer*/
 #logos_footer {
     display:flex;
+    align-items: center;
     justify-content: center;
-    gap: 50px;
-
+    gap: 40px;
 }
+
+/*les autres logos*/
+#logos_left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 510px;
+    gap: 15px;
+}
+
+/*logos reseaux sociaux*/
+#logos_footerr {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 500px;
+    padding-top: 20px;
+    gap: 40px; 
+}
+
+
+
 
 
 

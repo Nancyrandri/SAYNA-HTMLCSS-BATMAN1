@@ -6,28 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman Accueil</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <header class="h">
-        <nav class="container">
+    <header id="h">
+        <nav>
             <div class="menu"><a href="index.html" id="l"><img src="Logos/logohome.png" alt=" Logos batman blanc"></a>
                 <ul>
-                    <li><a href="index.html" class="home">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="logos" id="logos_right">
-            <a href="index.html" id="l"><img src="Logos/logo_bat_flèche.png" alt="Chauve-souris blanche à l'envers"></a>
+            <a href="index.html#h" id="l"><img src="Logos/logo_bat_flèche.png" alt="Chauve-souris blanche à l'envers"></a>
             <a href="#" id="l"><img src="Logos/icon_facebook.png" alt="Logos facebook"></a>
             <a href="#" id="l"><img src="Logos/icon_ig.png" alt="Logos instagram"></a>
             <a href="#" id="l"><img src="Logos/icon_tw.png" alt="Logos twitter"></a>
-            <a href="index.html" id="l"><img src="Logos/logo_bat_flèche_2.png" alt="Chauve-souris blanche"></a>
+            <a href="index.html#c" id="l"><img src="Logos/logo_bat_flèche_2.png" alt="Chauve-souris blanche"></a>
         </div>
 
         <section class="baniere">
@@ -44,18 +41,17 @@
                     <a href="index.html#Les_adversaires" ><button class="button">LES ADVERSAIRES</button></a>
                 </div>
             </div>
-             <div id="fleche_baniere">
-                <img src="Logos/flèche_down_header.png" alt="Flèche ver le bas">
-             </div>
         </section>    
-
+            
     </header>
-    
+                        
     <main>
-       
+        <div id="fleche">
+            <img src="Logos/flèche_down_header.png" alt="Flèche ver le bas">
+        </div>
         <!--1 section batman au cinema-->
         <section>
-            
+           
             <div class="text">
                 <h1  id="Le_heros">BATMAN AU CINÉMA</h1>
             
@@ -196,7 +192,8 @@
             </div>
 
             </div>
-
+        </section>
+        <section>
             <div class="h3_text">
                 <h1>JUSTICE LEAGUE</h1>
 
@@ -291,7 +288,7 @@
         </section>
         
                         <!--Section citation-->
-            <div>
+            <div class="container">
                 <img src="Logos/icon_guillemets_1.png" alt="Guillemet ouvert">
 
                     <p>La seule façon raisonnable de vivre en ce bas monde,<br>
