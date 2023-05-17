@@ -5,6 +5,33 @@
     box-sizing: border-box;
 }
 
+.up_bar {
+    border-top: #BCBBBD40 2px solid;
+    position: relative;
+    top: 132px;
+    left: 102px;
+    width: 85.6%;
+
+}
+
+.left_bar{
+    border-left: #BCBBBD40 2px solid;
+    position: absolute;
+    top: 0px;
+    left: 102px;
+    width: 80%;
+    height: 1012%;
+}
+   
+
+.right_bar {
+    border-right: #BCBBBD40 2px solid;
+    position: absolute;
+    top: 0px;
+    right: 102px;
+    width: 80%;
+    height: 1012%;
+}
 
 /*Header*/
 
@@ -46,8 +73,9 @@ nav ul li a:hover {
     justify-content:center;
     align-items:center;
     position:fixed;
-    right: 56px;
+    right: 51px;
     top: 50%;
+    gap: 20px;
     z-index: 2;
 }
 
@@ -86,8 +114,6 @@ h2 {font-size: 30px;
 
 /*Main*/
 
-/*Toute la page sans le footer*/
-
 /*premier element du main*/
 #fleche {
     display: flex;
@@ -97,17 +123,9 @@ h2 {font-size: 30px;
 }
 
 main {background-color: black;
-    outline-style: solid;
-    outline-color: #bcbbbd77;
-    outline-offset: -102px;
 
 }
 
-/*Mise en forme similaire des 4 sections*/
-section {
-    /*padding-left: 61px;
-    padding-right: 61px;*/
-}
 
 /*Texte h1 et texte descriptif en trois paragraphes*/
 .text {
@@ -141,19 +159,15 @@ p {
 }
 
 /*Image portrait des trois paragraphes*/
-/*pour pictures margin-top: 30px;
-    margin-right: 100px;
-    margin-bottom: 30px;
-    margin-left: 110px;*/
 .pictures {
     display:flex;
     width: 100%;
-    justify-content: space-evenly;
     justify-content: center;
     gap: 95px;
     transition-duration: 0.7s;
-    padding-bottom: 30px;       
+    padding-bottom: 30px;   
 }
+
 .pictures :hover {
     transform: scale(1.02);
     transition-duration: 0.7s;
@@ -162,7 +176,7 @@ p {
 /*sous-titre de chaque figure*/
 figcaption {
     font-family: 'Space Grotesk';
-    font-size: 16px;
+    font-size: 18px;
     font-weight: regular;
     color:  white;
     text-align: center;
@@ -254,9 +268,31 @@ h3 {
     font-family: 'Space Grotesk';
     color: white;
 }
+
+#grand_titre {
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    font-weight: 300;
+    font-size-adjust: 0.58;
+}
+
+#titre_film {
+    font-family: 'Rajdhani';
+    font-size: 18px;
+}
+
+#number {
+    font-size: 15px;
+}
+
+#bruce {
+    text-align:inherit;
+}
+    
 span {
     color: #FFFF00;
 }
+
 
 /*image batman video*/
 /*div image video*/
@@ -279,7 +315,49 @@ span {
     background-image: linear-gradient(to bottom right, #EDDEBF, #19587D  );
     display: flex;
     justify-content: center;
-    opacity: 0.9;
+    opacity: 0.7;
+    padding: 70px 0;
+}
+
+/*class du div comprenant le formulaire*/
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*class de Prenons contact h2*/
+.formulaire_h2 { 
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/*class des adresse email newsletter et message*/
+.title {
+    display: block;
+    margin: 28px 0;
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+}
+
+
+/*Design de input et textarea*/
+.form .formulaire input[type='email'], textarea {
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    border-bottom: 2px solid #C4C4C4;
+    background-color: transparent;
+    padding: 10px 0;
+}
+::placeholder {
+    color : white;
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /*Contenant texte et bouton du formulaire*/
@@ -287,49 +365,73 @@ span {
     max-width: fit-content;
 }
 
-/*Mise en forme de la label adresse email et newsletter*/
-[for="email"], [for="newsletter"] {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-size: 22px;
-    color: white;
+/*Icone fleche dans le formulaire*/
+form .formulaire .icon_fleche img {
+    transform: rotate(90deg);
+    width: 25px;
+}
+
+/*Souhaitez vous recevoir des news*/
+.choix {
+    margin: 15px 0;
+    border-bottom: 2px solid #C4C4C4;
 }
 
 /*Mise en forme de label news et de la classe choix*/
 [for="news"], .choix {
     font-family: 'Space Grotesk';
     font-size: 18px;
-    color: #C4C4C4;
-}
-
-.box_f1, .box_f2, .box_f3 {
-    padding: 20px 60px 20px 60px;
-    border: none;
-    font-family: 'Space Grotesk';
-    font-size: 12px;
     color: white;
-    display:flex;
-    gap: 20px;
-    justify-content: center;
-    
 }
 
+/*les boutons des films des comics de tout*/
+.btn_group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
 
-/*Mise en forme similaire des boutons dans le sect1 et dans le formulaire*/
+.btn_group input[type='radio'] {
+    opacity: 0;
+}
+
+.btn_group label {
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(69deg, #EDDEBF, #19587D ) 1;
+    padding: 10px 25px;
+    font-size: 12px;
+    color: white
+}
+
+.btn_group label:hover {
+    background-image: linear-gradient(to right, #eddebf, #19587D);
+}
+
+input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+}
+
+/*Design similaire des boutons dans le sect1 et dans le formulaire*/
 /*Les boutons en rouge et blanc comme les deux premiers et confirmer dans le formulaire*/ 
 /* rgba(237, 222, 191, 0.397), */
 .button {
-    background-image: linear-gradient(to right,rgba(237, 222, 191, 0.400), rgba(138, 0, 9, 0.600));
+    background-image: linear-gradient(to right,rgba(237, 222, 191, 0.40), rgba(138, 0, 9, 0.40));
+    opacity: 0.7;
     padding: 20px 60px 20px 60px;
     border: none;
     font-family: 'Rajdhani';
     font-size: 22px;
     font-weight: medium;
     color: white;
+    cursor: pointer;
 }
 
 .button:hover {
     background-image: linear-gradient(to right, #eddebf, #b11313);
+    opacity: 1;
 }
 
 #button-header {
@@ -342,7 +444,7 @@ span {
 
  /*Tous les logos blanc*/
 #l :hover {
-    background: yellow;
+    filter: invert(20%) sepia(100%) saturate(2472%) hue-rotate(356deg) brightness(105%) contrast(103%);
 }
 
 /*section citation*/
@@ -392,6 +494,7 @@ footer {
     background-color: black;
     justify-content: center;
     text-align: center;
+    overflow-y: hidden;
 }
 
 /*Logos wb et texte*/
@@ -438,6 +541,7 @@ footer {
     padding-top: 20px;
     gap: 40px; 
 }
+
 
 
 
