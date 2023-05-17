@@ -1,28 +1,416 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+/*Comprends le logos batman blanc, le menu, la phrase d'intro et le titre avec les boutons, les logos touches du droit et la fleche*/
 header {
-    background-image: url (Illustrations/Bathome1.png);
+    background-image: url('Illustrations/Bathome1.png');
+    padding-top: 40px;
+    padding-left: 102px;
+    padding-right: 102px;
 }
 
-h2 {font-size: 36px;
+/*Englobe le logos batman top dans le header et le menu home*/
+.menu {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/*font du menu home*/
+.home {
     font-family: 'Rajdhani';
-    font-style: medium;
-    font-display: ;
+    font-size: 22px;
+    font-weight: medium;
+    color: white;
 }
-intro {font-size: 12px;
+
+/*Logos image droit de la page*/
+#logos_right {
+    display: inline-flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    right: 56px;
+    top: 50%;
+    z-index: 2;
+}
+
+/*Tous qui se trouvent au milieu du background-image batman rouge avec la fleche du bas*/
+.baniere {
+    align-items:center;
+    justify-content:center;
+}
+
+/*texte et les boutons de la baniere*/
+#sect1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+}
+
+/*Premier paragraphe*/
+
+#introduction {
+    font-size: 18px;
     font-family: 'Space Grotesk';
+    color: white;
 }
 
-.contact {background-image: linear-gradient(to bottom right, #EDDEBF, #19587D  );
+/*Premier titre de la page qui doit être le h1 de plus petite taille que les autres titres*/
+h2 {font-size: 30px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
-.button {background-image: linear-gradient(to bottom right, #EDDEBF, #B11313  );
-    width: auto;
-    height: 60px;
+
+#fleche_baniere {
+    display: flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.pictures {display: inline-block;
+/*Main*/
+
+/*Toute la page sans le footer*/
+main {background-color: black;
+    outline-style: solid;
+    outline-color: #bcbbbd77;
+    outline-offset: -102px;
 
 }
 
-img src="Illustrations/Bathome11.png" {border
+/*Mise en forme similaire des 4 sections*/
+section {
+    /*padding-left: 61px;
+    padding-right: 61px;*/
+}
+
+/*Texte h1 et texte descriptif en trois paragraphes*/
+.text {
+    /*margin-top: 30px;
+     margin-right: 30px;
+     margin-bottom: 30px;
+     margin-left: 173px;*/
+    text-align: justify; 
+    text-justify: inter-word;
+    padding-left: 172px;
+    padding-right: 260px;
+ }
+
+ /*Les titres avant chaque description*/
+h1 {font-size: 36px;
+    font-family: 'Rajdhani';
+    font-weight: medium;
+    color: white;
+}
+
+ /*texte descriptif sans titraille*/
+ #description {
+    font-family: 'Space Grotesk';
+    font-size: 22px;
+    color: white;
+}
+
+
+/*Tous les paragraphes p*/
+p {
+    color: white;
+    text-align: justify;
+}
+
+/*Image portrait des trois paragraphes*/
+/*pour pictures margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    margin-left: 110px;*/
+.pictures {
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    justify-content: center;
+    transition-duration: 0.7s;       
+}
+
+.pictures :hover {
+    transform: scale(1.02);
+    transition-duration: 0.7s;
+}
+
+/*sous-titre de chaque figure*/
+figcaption {
+    font-family: 'Space Grotesk';
+    font-size: 16px;
+    font-weight: regular;
+    color:  white;
+    text-align: center;
+}
+
+/*h1 némésis et images batman en acier*/
+.h1_pictures {
+    margin-top: 150px;
+}
+
+/*image du némésis*/
+#acier {
+    position: relative;
+    display:flex;
+    width: 12%;
+    margin: -150px 300px 0px 80px;   
+}
+
+/*Image batman mise en place au droit de la page*/
+.imagebatmanright {
+    display:flex;
+    width: 100%;
+    justify-content: right;
+    margin-top: -110px;
+    margin-bottom: -100px;
+}
+
+#batrt {
+    z-index: 1;
+}
+
+ /*texte h1 et p du justice league*/
+ .h3_text {
+    padding: 220px;
+}
+
+/*Tous ce qui se trouvent dans le multimédia*/
+
+/*Toute la section multimédia*/
+.mediabat {
+    padding-left: 172px;
+    padding-right: 172px;
+}
+
+/*Mutimedia*/
+h3 {
+    font-size: 30px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    color: white;
+}
+
+/*Fleches images et texte du multimedia*/
+.example {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+/*Image batman begins et texte*/
+.multimedia {
+    display: flex;
+    max-width: 600px;
+}
+
+/*
+[src="Illustrations/Bathome_ba2.png"] {
+    display: flex;
+    margin-top: 80px ;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    margin-left: 170px;
+}
+ */
+
+ /*table {
+     display:flex;
+     justify-content: center;
+ }*/
+
+/*Texte batman begins*/
+ .action {
+    background-image:linear-gradient(to bottom right, #EDDEBF, #19587D  );
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    padding: 20px 20px 0px 20px;
+    font-size: 12px;
+    font-family: 'Space Grotesk';
+    color: white;
+}
+span {
+    color: #FFFF00;
+}
+
+/*image batman video*/
+/*div image video*/
+#video {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    padding: 40px 102px 40px 102px ;
+}
+
+/*id image video*/
+#batnoir :hover {
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.471);
+}
+
+/*Formulaire*/
+
+/*Tous le formulaire*/
+.contact {
+    background-image: linear-gradient(to bottom right, #EDDEBF, #19587D  );
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+/*Contenant texte et bouton du formulaire*/
+.formulaire {
+    max-width: fit-content;
+}
+
+/*Mise en forme de la label adresse email et newsletter*/
+[for="email"], [for="newsletter"] {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-size: 22px;
+    color: white;
+}
+
+/*Mise en forme de label news et de la classe choix*/
+[for="news"], .choix {
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    color: #C4C4C4;
+}
+
+.box_f1, .box_f2, .box_f3 {
+    padding: 20px 60px 20px 60px;
+    border: none;
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    color: white;
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+
+/*Mise en forme similaire des boutons dans le sect1 et dans le formulaire*/
+/*Les boutons en rouge et blanc comme les deux premiers et confirmer dans le formulaire*/ 
+/* rgba(237, 222, 191, 0.397), */
+.button {
+    background-image: linear-gradient(to right,rgba(237, 222, 191, 0.400), rgba(138, 0, 9, 0.600));
+    padding: 20px 60px 20px 60px;
+    border: none;
+    font-family: 'Rajdhani';
+    font-size: 22px;
+    font-weight: medium;
+    color: white;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #eddebf, #b11313);
+}
+
+#button-header {
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+ /*Logos boutons lien*/
+
+ /*Tous les logos blanc*/
+#l :hover {
+    background: yellow;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+}
+
+/*Logos wb et texte*/
+.foot {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 450px;
+}
+
+/*texte du logos sb seulement*/
+#fin {
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    text-align: center;
+}
+
+
+#logos_footer {
+    display:flex;
+    justify-content: center;
+    gap: 50px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
