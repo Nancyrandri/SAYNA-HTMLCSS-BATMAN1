@@ -11,6 +11,7 @@
     top: 132px;
     left: 102px;
     width: 85.6%;
+  
 
 }
 
@@ -19,8 +20,9 @@
     position: absolute;
     top: 0px;
     left: 102px;
-    width: 80%;
+    width: 2%;
     height: 1012%;
+    
 }
    
 
@@ -29,8 +31,9 @@
     position: absolute;
     top: 0px;
     right: 102px;
-    width: 80%;
+    width: 2%;
     height: 1012%;
+   
 }
 
 /*Header*/
@@ -93,6 +96,7 @@ nav ul li a:hover {
     height:100vh;
     align-items:center;
     justify-content:center;
+    gap: 25px
 }
 
 /*Premier paragraphe*/
@@ -101,6 +105,7 @@ nav ul li a:hover {
     font-size: 18px;
     font-family: 'Space Grotesk';
     color: white;
+    text-align: center;
 }
 
 /*Premier titre de la page qui doit être le h1 mais de plus petite taille que les autres titres*/
@@ -123,9 +128,7 @@ h2 {font-size: 30px;
 }
 
 main {background-color: black;
-
 }
-
 
 /*Texte h1 et texte descriptif en trois paragraphes*/
 .text {
@@ -150,7 +153,6 @@ h1 {font-size: 36px;
     font-size: 22px;
     color: white;
 }
-
 
 /*Tous les paragraphes p*/
 p {
@@ -220,6 +222,7 @@ figcaption {
 .mediabat {
     padding-left: 172px;
     padding-right: 172px;
+
 }
 
 /*Mutimedia*/
@@ -242,21 +245,6 @@ h3 {
     display: flex;
     max-width: 600px;
 }
-
-/*
-[src="Illustrations/Bathome_ba2.png"] {
-    display: flex;
-    margin-top: 80px ;
-    margin-right: 100px;
-    margin-bottom: 150px;
-    margin-left: 170px;
-}
- */
-
- /*table {
-     display:flex;
-     justify-content: center;
- }*/
 
 /*Texte batman begins*/
  .action {
@@ -418,8 +406,7 @@ input[type='submit'] {
 /*Les boutons en rouge et blanc comme les deux premiers et confirmer dans le formulaire*/ 
 /* rgba(237, 222, 191, 0.397), */
 .button {
-    background-image: linear-gradient(to right,rgba(237, 222, 191, 0.40), rgba(138, 0, 9, 0.40));
-    opacity: 0.7;
+    background: linear-gradient(to right,rgba(237, 222, 191, 0.4), rgba(138, 0, 9, 0.4));
     padding: 20px 60px 20px 60px;
     border: none;
     font-family: 'Rajdhani';
@@ -431,7 +418,6 @@ input[type='submit'] {
 
 .button:hover {
     background-image: linear-gradient(to right, #eddebf, #b11313);
-    opacity: 1;
 }
 
 #button-header {
@@ -440,9 +426,9 @@ input[type='submit'] {
     justify-content: center;
 }
 
- /*Logos boutons lien*/
+ /*Logos boutons liens*/
 
- /*Tous les logos blanc*/
+ /*Tous les logos ou icones blancs*/
 #l :hover {
     filter: invert(20%) sepia(100%) saturate(2472%) hue-rotate(356deg) brightness(105%) contrast(103%);
 }
